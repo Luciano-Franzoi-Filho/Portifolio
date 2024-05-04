@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:content-box;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+
+.site{
+    position: relative;
+    margin-top: -40px;
+    height: 100%;
+    width: calc(100% - 60px); 
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --background: #D5D9DF;
+    --back-campos: #ebe9e9;
+    --letras: #302f2f;
+    --botao-hover: #D0E562 ;
+}
+
+.dark-mode:root {
+    --background: #212529;
+    --letras: #cfcaca;
+    --back-campos: #6e6c6c;
+    --botao-hover: #0056b3;
+}
+
+.imagem{
+    border: 1.5px solid black;
+    border-radius: 500px;
+    width: 300px; 
+    height: 300px; 
+    margin-right: 20px;
+}
+
+.divImagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.item{
+    margin-bottom: 20px;
+}
+
+.campos{
+    color: var(--letras);
+    padding: 10px;
+    margin: 40px;
+    max-width: 70%;
+    background-color: var(--back-campos);
+    border-radius: 15px;
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.411);
+}
+
+.contato{
+    color: var(--letras);
+    padding: 10px;
+    margin: 40px;
+    width: 70%;
+    background-color: var(--back-campos);
+    border-radius: 15px;
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.411);
+}
+
+.opcoesContato{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--letras);
+    height: 100vh;
+    width: calc(100% - 60px); 
+    margin-left: 60px;
+}
+
+.textoSobreMim{
+    display: flex;
+    padding: 10px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--letras);
+}
+
+.logoRodape{
+    width: 80px; 
+    height: 25px; 
+    margin-right: 20px;
+}
+
+
+.botaoConteudo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao {
+    margin: 0 10px;
+    color: var(--letras);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: var(--botao-hover);
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    margin-top: 5px;
+    margin-left: 0px;
+    background-color: #111;
+    width: 48px;
+    height: 20px; /* Aumentei um pouco a altura para melhorar a visualização */
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.fa-moon,
+.fa-sun {
+    font-size: 20px;
+    position: fixed;
+}
+
+.fa-moon {
+    color: #f1c40f;
+    margin-left: 31px;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.checkbox-label .bolinha {
+    background-color: #b1a9a9;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .bolinha {
+    transform: translateX(27px); 
+}
