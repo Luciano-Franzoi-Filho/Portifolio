@@ -10,7 +10,7 @@
 body{
     background-color: var(--background);
     font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .site{
@@ -29,7 +29,8 @@ body{
     --background: #D5D9DF;
     --back-campos: #ebe9e9;
     --letras: #302f2f;
-    --botao-hover: #D0E562 ;
+    --botao-hover: #D0E562;
+    --projetos: #727d88;
 }
 
 .dark-mode:root {
@@ -37,6 +38,7 @@ body{
     --letras: #cfcaca;
     --back-campos: #6e6c6c;
     --botao-hover: #0056b3;
+    --projetos: #212529;
 }
 
 .imagem{
@@ -59,6 +61,12 @@ h2{
 
 .item{
     margin-bottom: 20px;
+}
+
+.itemRepositorio{
+    color: var(--letras);
+    margin-bottom: 20px;
+    margin-left: 15px;
 }
 
 .campos{
@@ -99,9 +107,84 @@ h2{
     margin-left: 60px;
 }
 
+.camposRepositorio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.repositorio{
+    color: var(--letras);
+    padding: 10px;
+    margin: 40px;
+    max-width: 70%;
+    background-color: var(--back-campos);
+    border-radius: 15px;
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.411);
+}
+
+.projetos{
+    color: var(--letras);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 15px;
+    background-color: var(--projetos);
+    max-width: 200px;
+}
+
+.imagemRepositorioGoogle{
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.imagemRepositorioNotas{
+    width: 100%;
+    max-width: 1277px;
+    height: auto;
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 15px;
+}
+
+.imagemRepositorioImc{
+    display: block;
+    width: 100%;
+    max-width: 800px;     
+    height: auto;
+    margin: 0 auto; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tituloRepositorio{
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--letras);
+}
+
+
+.tituloRepositorio:hover{
+    color: var(--botao-hover); 
+}
+
 .textoSobreMim{
     display: flex;
+    flex-direction: column;
     padding: 10px;
+}
+
+.textoSobreMimSubtitulo{
+    font-size: 10px;
 }
 
 .rodape{
@@ -154,7 +237,7 @@ h2{
     margin-left: 0px;
     background-color: #111;
     width: 48px;
-    height: 20px; /* Aumentei um pouco a altura para melhorar a visualização */
+    height: 20px; /* Aumentei um pouualização */
     border-radius: 50px;
     position: relative;
     padding: 5px;
