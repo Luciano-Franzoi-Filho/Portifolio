@@ -48,7 +48,6 @@ function toggleDarkMode() {
                 logo.style.display = "none";
             }
         });
-        // Itera sobre os logos do rodapé e exibe o logo escura e oculta o claro
         logosRodape.forEach(function (logoRodape) {
             if (logoRodape.dataset.mode === "escura") {
                 logoRodape.style.display = "inline";
@@ -67,7 +66,6 @@ function toggleDarkMode() {
                 logo.style.display = "none";
             }
         });
-        // Itera sobre os logos do rodapé e exibe o logo claro e oculta o escura
         logosRodape.forEach(function (logoRodape) {
             if (logoRodape.dataset.mode === "clara") {
                 logoRodape.style.display = "inline";
